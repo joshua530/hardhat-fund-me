@@ -1,0 +1,9 @@
+--- gas optimization ---
+read from memory instead of storage(copy the value from storage to memory if you'll use it often)
+use custom errors
+
+--- on storage ---
+any variable that is changeable that we want to persist across the contract's executions and transactions is saved to a giant array called storage.
+The array is sequentially indexed from zero
+memory, constant and immutable variables don't go to storage
+reading and writing to storage is expensive, so we want to minimize using storage as much as we can

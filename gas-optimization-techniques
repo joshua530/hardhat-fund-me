@@ -1,0 +1,1 @@
+read from memory instead of storage(copy the value from storage to memory if you'll use it often)
